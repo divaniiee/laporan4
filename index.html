@@ -168,14 +168,18 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <!-- Order Form -->
-                        <form name="Contact-Form">
+                        <form name="Order-Form">
                             <div class="mb-3">
-                                <label for="NamaPemesan" class="form-label">Nama Pemesan <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="NamaPemesan" name="NamaPemesan" placeholder="Enter your name" required>
+                                <label for="Nama Pemesan" class="form-label">Nama Pemesan <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="Nama Pemesan" name="Nama Pemesan" placeholder="Enter your name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="AlamatPemesan" class="form-label">Alamat Pemesan <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="AlamatPemesan" name="AlamatPemesan" placeholder="Enter your address" required>
+                                <label for="Alamat Pemesan" class="form-label">Alamat Pemesan <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="Alamat Pemesan" name="Alamat Pemesan" placeholder="Enter your address" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Nama Bunga" class="form-label">Nama Bunga <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="Nama Bunga" name="Nama Bunga" placeholder="Enter your flowers name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="Notes" class="form-label">Notes</label>
@@ -193,7 +197,7 @@
         </svg>
     </section>
     
-<!-- End Contact -->
+<!-- End Order -->
 
 <!-- Start Footer -->
 <footer class="bg-primary text-white text-center pb-5">
@@ -205,7 +209,7 @@
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <form name="submit-to-google-sheet">
-  <input name="email" type="email" placeholder="Email" required>
+  <input name="Email" type= "email" placeholder="email" required>
   <button type="submit">Send</button>
   <button class="btn btn-primary" type="button" disabled>
     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
@@ -214,8 +218,8 @@
 </form>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOyy_NlkNF48cchcmTRlf7l9N8WYjaHwbfs9QJZaANxJvaPmxm7_mhG74YbwuG7AZ9/exec'
-  const form = document.forms['Contact-Form']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzlX-x2AnLWPDaUib3nMj2_QLZn_chI_fBaW23fUWQ9PTc6Ak75ashrW9aRE-E1XGhM/exec'
+  const form = document.forms['Order-Form']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
